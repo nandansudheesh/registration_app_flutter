@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/login.dart';
-void main()
-{
-  runApp(MaterialApp(debugShowCheckedModeBanner:false ,home: Login(),));
+import 'package:loginapp/signup.dart';
+
+void main() {
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Sign()));
 }
