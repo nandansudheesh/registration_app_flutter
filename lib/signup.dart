@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Signup extends StatelessWidget {
+class Signup extends StatefulWidget {
   const Signup({super.key});
 
+  @override
+  State<Signup> createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
+  TextEditingController namecontroller=TextEditingController();
+  TextEditingController emailcontroller=TextEditingController();
+  TextEditingController passwordcontroller=TextEditingController();
+  TextEditingController confirmpasswordcontroller=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +35,7 @@ class Signup extends StatelessWidget {
                 ),
                 Text("create an account,it's free"),
                 SizedBox(height: 50),
-                Align(child: Text("USERNAME"), alignment: Alignment.topLeft),
+                dart pub global activate flutterfire_cli
                 TextField(
                   decoration: InputDecoration(
                     filled: true,
